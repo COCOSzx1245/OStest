@@ -6,7 +6,7 @@ services:
     image: qemux/qemu
     container_name: qemu
     environment:
-      BOOT: "https://archive.org/download/linux-mint-21.1-cinnamon/linuxmint-21.1-cinnamon-64bit.iso"
+      BOOT: "https://archive.org/download/linuxmint-22.1-xfce-64bit_202502/linuxmint-22.1-xfce-64bit.iso"
       RAM_SIZE: "4G"
       CPU_CORES: "2"
       DISK_SIZE: "32G"
@@ -21,3 +21,4 @@ services:
       - "3389:3389/udp"
     volumes:
       - ./qemu:/storage
+
