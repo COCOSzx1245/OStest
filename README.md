@@ -10,3 +10,20 @@ Low
 🟢 เริ่ม sudo docker-compose -f linux.yml start
 🔴 หยุด sudo docker-compose -f linux.yml stop
 🔄 รีสตาร์ท sudo docker-compose -f linux.yml restart
+
+🚀 ขั้นตอนการติดตั้ง
+
+เลือกคำสั่งตามระบบปฏิบัติการที่คุณต้องการติดตั้ง:
+
+🪟 Windows
+
+mkdir user && cd user
+wget -O windows.yml https://raw.githubusercontent.com/COCOSzx1245/OStest/refs/heads/main/windows.yml
+sudo docker-compose -f windows.yml up
+
+
+🐧 Linux
+
+mkdir user && cd user
+wget -O linux.yml https://raw.githubusercontent.com/COCOSzx1245/OStest/refs/heads/main/linux.yml
+sudo docker-compose -f linux.yml up
